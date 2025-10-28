@@ -1,0 +1,129 @@
+body {
+    background: antiquewhite;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.cont {
+    display: flex; 
+    width: 80%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+aside {
+    flex: 1;
+}
+
+main {
+    flex: 4;
+}
+
+.item1 {
+    flex-grow: 1;
+    flex-basis: 150px;
+}
+
+.item2 {
+    flex-grow: 4;
+}
+
+div {
+    margin: 5px;
+    padding: 15px;
+    background: azure;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    width: 90%;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+img { 
+    margin: auto; 
+    display: block; 
+}
+
+span {
+    font-size: larger;
+    color: blue;
+    font-weight: bold;
+}
+
+header {
+    background: linear-gradient(135deg, #1e88e5, #0d47a1);
+    color: white;
+    padding: 30px 20px;
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+ol, ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+    background: lavenderblush;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #1a5276;
+    text-decoration: underline;
+}
+
+strong {
+    color: #2c3e50;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .cont {
+        flex-direction: column;
+        width: 95%;
+    }
+    
+    .item1, .item2 {
+        flex: 1;
+    }
+    
+    header {
+        padding: 20px 10px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+}
